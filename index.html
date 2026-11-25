@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="description" content="Sharu City Stories is a small original 3D open-city browser game.">
+  <title>Sharu City Stories — Open City Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="game" aria-label="Sharu City Stories 3D game"></canvas>
+  <div id="hud" class="hud hidden">
+    <div class="topbar"><div class="brand">SHARU CITY <small>COASTLINE STORIES</small></div><div class="status"><span>₹ <b id="cash">0</b></span><span id="mode">ON FOOT</span></div></div>
+    <div class="mission"><div class="mission-tag">CITY JOB</div><b id="missionTitle">A New Delivery</b><small id="missionText">Find the glowing checkpoint and deliver the package.</small></div>
+    <div class="bottom"><div id="prompt" class="prompt">WASD move · Mouse look · F enter / exit car</div><div class="speed hidden" id="speed">0 <small>KM/H</small></div></div>
+    <div class="crosshair"></div><div id="toast" class="toast"></div>
+  </div>
+  <div id="overlay" class="overlay"><section class="card"><div class="eyebrow">A small open-city adventure</div><h1 id="title">Game with<br>Sharu</h1><p id="description">Cruise through a colorful coastal city, explore its neighborhoods, and take on delivery jobs. This is an original mini game inspired by open-world city adventures.</p><div class="chips"><span>🌴 Palm Beach</span><span>🏙️ Neon Market</span><span>🚗 Drive & explore</span><span>📦 Delivery jobs</span></div><button id="start">START YOUR STORY</button><small id="footnote">Desktop recommended · Single-player browser game</small></section></div>
+  <script type="module" src="game.js"></script>
+</body>
+</html>
